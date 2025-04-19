@@ -19,3 +19,12 @@ function calculateRectangleArea(){
     const rectangleAreaSpan = document.getElementById('rectangle-area');
     rectangleAreaSpan.innerText = area;
 }
+
+function calculateRectangleArea() {
+    const length = getInputValueById('rectangle-length');
+    const width = getInputValueById('rectangle-width');
+    const area = length * width;
+  
+    setInnerTextById('rectangle-area', area);
+    addToCalculationList("Rectangle", area);
+}

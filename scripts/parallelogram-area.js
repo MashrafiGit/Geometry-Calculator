@@ -24,3 +24,21 @@ function setInnerTextById(elementId, area){
     const element = document.getElementById(elementId);
     element.innerText = area;
 }
+
+function calculateEllipseArea(){
+    const majorRadius = getInputValueById('ellipse-major-radius');
+    const minorRadius = getInputValueById('ellipse-minor-radius');
+    const area = 3.14 * majorRadius * minorRadius;
+  
+    setInnerTextById('ellipse-area', area);
+    addToCalculationList("Ellipse", area);
+  }
+
+  function calculateParallelogramArea() {
+    const base = getInputValueById('parallelogram-base');
+    const height = getInputValueById('parallelogram-height');
+    const area = base * height;
+  
+    setInnerTextById('parallelogram-area', area);
+    addToCalculationList("Parallelogram", area);
+}
