@@ -171,7 +171,7 @@
             <div class="card-body">
               <h2 class="card-title">Rhombus!</h2>
               <p class="text-lg">Area = 0.5 × d₁ × d₂</p>
-              <div class="flex gap-4">
+              <div class="flex">
                 <input
                   id="rhombus-d1"
                   class="w-24 text-2xl p-2 rounded-sm"
@@ -215,7 +215,7 @@
             <div class="card-body">
               <h2 class="card-title">Pentagon!</h2>
               <p class="text-lg">Area = 0.5 * p * b</p>
-              <div class="flex gap-5">
+              <div class="flex">
                 <input
                   class="w-24 text-2xl p-2 rounded-sm"
                   type="text"
@@ -223,7 +223,7 @@
                   id="pentagon-perimeter"
                   placeholder="Peri"
                 />
-                <p class="w-[26px]"></p>
+                <span class="mr-4 ml-2">cm</span>
                 <input
                   class="w-24 text-2xl p-2 rounded-sm"
                   type="text"
@@ -231,9 +231,13 @@
                   id="pentagon-apothem"
                   placeholder="apo"
                 />
+                <span class="ml-2">cm</span>
               </div>
               <div>
-                <p class="text-xl">Area: <span id="pentagon-area">0</span></p>
+                <p class="text-xl">
+                  Area: <span id="rhombus-area">0</span>
+                  <span>cm<sup>2</sup></span>
+                </p>  
               </div>
               <div class="card-actions justify-end">
                 <button
@@ -253,7 +257,7 @@
             <div class="card-body">
               <h2 class="card-title">Ellipse!</h2>
               <p class="text-lg">Area = π * a * b</p>
-              <div class="flex gap-5">
+              <div class="flex">
                 <input
                   class="w-24 text-2xl p-2 rounded-sm"
                   type="text"
@@ -261,7 +265,7 @@
                   id="ellipse-major-radius"
                   placeholder="major"
                 />
-                <p class="w-[30px]"></p>
+                <span class="mr-4 ml-2">cm</span>
                 <input
                   class="w-24 text-2xl p-2 rounded-sm"
                   type="text"
@@ -269,9 +273,13 @@
                   id="ellipse-minor-radius"
                   placeholder="minor"
                 />
+                <span class="ml-2">cm</span>
               </div>
               <div>
-                <p class="text-xl">Area: <span id="ellipse-area">0</span></p>
+                <p class="text-xl">
+                  Area: <span id="rhombus-area">0</span>
+                  <span>cm<sup>2</sup></span>
+                </p>
               </div>
               <div class="card-actions justify-end">
                 <button
