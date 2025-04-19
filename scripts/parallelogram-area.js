@@ -40,5 +40,5 @@ function calculateEllipseArea(){
     const area = base * height;
   
     setInnerTextById('parallelogram-area', area);
-    addToCalculationList("Parallelogram", area);
+    addToCalculationList("Parallelogram", [base, height], area);
 }

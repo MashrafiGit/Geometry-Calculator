@@ -18,13 +18,21 @@
       <!-- main content container -->
       <div class="flex flex-col md:flex-row">
         <!-- shape card container -->
-        <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        <div
+          class="flex-1 grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-y-7"
+        >
           <!-- Triangle card -->
-          <div class="card w-96 bg-base-100 shadow-xl">
-            <figure><img src="images/triangle.png" alt="Shoes" /></figure>
+          <div class="card max-w-[340px] bg-base-100 shadow-xl pt-8 mx-auto">
+            <figure>
+              <img
+                class="max-w-[200px]"
+                src="images/triangle.png"
+                alt="Shoes"
+              />
+            </figure>
             <div class="card-body">
               <h2 class="card-title">Triangle</h2>
-              <p class="text-center text-3xl">Area = 0.5 X b X h</p>
+              <p class="text-lg">Area = 0.5 X b X h</p>
               <div class="">
                 <input
                   id="triangle-base"
@@ -43,7 +51,7 @@
                 <span>cm</span>
               </div>
               <div>
-                <p class="text-2xl">
+                <p class="text-xl">
                   Area: <span id="triangle-area"></span>
                   <span>cm<sup>2</sup></span>
                 </p>
@@ -59,11 +67,17 @@
             </div>
           </div>
           <!-- Rectangle Card -->
-          <div class="card w-96 bg-base-100 shadow-xl">
-            <figure><img src="images/rectangle.png" alt="Shoes" /></figure>
+          <div class="card max-w-[340px] bg-base-100 shadow-xl pt-8 mx-auto">
+            <figure>
+              <img
+                class="max-w-[250px]"
+                src="images/rectangle.png"
+                alt="Shoes"
+              />
+            </figure>
             <div class="card-body">
               <h2 class="card-title">Rectangle!</h2>
-              <p>Area (A) = w X I</p>
+              <p class="text-lg">Area (A) = w X I</p>
               <div class="flex">
                 <!-- rectangle length -->
                 <input
@@ -85,7 +99,7 @@
                 <span>cm</span>
               </div>
               <div>
-                <p class="text-2xl">
+                <p class="text-xl">
                   Area: <span id="rectangle-area">0</span>
                   <span>cm<sup>2</sup> </span>
                 </p>
@@ -101,11 +115,17 @@
             </div>
           </div>
           <!-- Parallelogram card -->
-          <div class="card w-96 bg-base-100 shadow-xl">
-            <figure><img src="images/parallelogram.png" alt="Shoes" /></figure>
+          <div class="card max-w-[340px] bg-base-100 shadow-xl pt-8 mx-auto">
+            <figure>
+              <img
+                class="max-w-[250px]"
+                src="images/parallelogram.png"
+                alt="Shoes"
+              />
+            </figure>
             <div class="card-body">
               <h2 class="card-title">Parallelogram!</h2>
-              <p class="text-3xl">Area (A) = b X h</p>
+              <p class="text-lg">Area (A) = b X h</p>
               <div>
                 <input
                   class="w-24 text-2xl p-2 rounded-sm"
@@ -125,8 +145,8 @@
                 <span>cm</span>
               </div>
               <div>
-                <p>
-                  Area: <span id="parallelogram-area"></span>cm <sup>2</sup>
+                <p class="text-xl">
+                  Area: <span id="parallelogram-area"></span> cm<sup>2</sup>
                 </p>
               </div>
               <div class="card-actions justify-end">
@@ -140,11 +160,17 @@
             </div>
           </div>
           <!-- Rhombus card -->
-          <div class="card w-96 bg-base-100 shadow-xl">
-            <figure><img src="images/rhombus.png" alt="Rhombus" /></figure>
+          <div class="card max-w-[340px] bg-base-100 shadow-xl pt-8 mx-auto">
+            <figure>
+              <img
+                class="max-w-[200px]"
+                src="images/rhombus.png"
+                alt="Rhombus"
+              />
+            </figure>
             <div class="card-body">
               <h2 class="card-title">Rhombus!</h2>
-              <p class="text-3xl">Area = 0.5 × d₁ × d₂</p>
+              <p class="text-lg">Area = 0.5 × d₁ × d₂</p>
               <div class="flex gap-4">
                 <input
                   id="rhombus-d1"
@@ -162,7 +188,7 @@
                 <span>cm</span>
               </div>
               <div>
-                <p class="text-2xl">
+                <p class="text-xl">
                   Area: <span id="rhombus-area">0</span>
                   <span>cm<sup>2</sup></span>
                 </p>
@@ -179,11 +205,17 @@
           </div>
 
           <!-- Pentagon card -->
-          <div class="card w-96 bg-base-100 shadow-xl">
-            <figure><img src="/images/pentagon.png" alt="Shoes" /></figure>
+          <div class="card max-w-[340px] bg-base-100 shadow-xl pt-8 mx-auto">
+            <figure>
+              <img
+                class="max-w-[220px] max-h-[180px]"
+                src="/images/pentagon.png"
+                alt="Shoes"
+              />
+            </figure>
             <div class="card-body">
               <h2 class="card-title">Pentagon!</h2>
-              <p>Area = 0.5 * p * b</p>
+              <p class="text-lg">Area = 0.5 * p * b</p>
               <div class="flex gap-5">
                 <input
                   class="w-24 text-2xl p-2 rounded-sm"
@@ -201,7 +233,7 @@
                 />
               </div>
               <div>
-                <p>Area: <span id="pentagon-area">0</span></p>
+                <p class="text-xl">Area: <span id="pentagon-area">0</span></p>
               </div>
               <div class="card-actions justify-end">
                 <button
@@ -214,11 +246,13 @@
             </div>
           </div>
           <!-- Ellipse card -->
-          <div class="card w-96 bg-base-100 shadow-xl">
-            <figure><img src="images/ellipse.png" alt="Shoes" /></figure>
+          <div class="card max-w-[340px] bg-base-100 shadow-xl pt-8 mx-auto">
+            <figure>
+              <img class="max-w-[250px]" src="images/ellipse.png" alt="Shoes" />
+            </figure>
             <div class="card-body">
               <h2 class="card-title">Ellipse!</h2>
-              <p>Area = π * a * b</p>
+              <p class="text-lg">Area = π * a * b</p>
               <div class="flex gap-5">
                 <input
                   class="w-24 text-2xl p-2 rounded-sm"
@@ -236,7 +270,7 @@
                 />
               </div>
               <div>
-                <p>Area: <span id="ellipse-area">0</span></p>
+                <p class="text-xl">Area: <span id="ellipse-area">0</span></p>
               </div>
               <div class="card-actions justify-end">
                 <button
@@ -250,10 +284,10 @@
           </div>
         </div>
         <!-- Area calculation container -->
-        <div class="w-96 border-2 border-gray-700 rounded-md p-4">
-            <h3 class="text-3xl text-center mb-4">Area Calculation</h3>
-            <div id="area-calculation-list" class="space-y-2"></div>
-          </div>
+        <div class="w-[360px] border border-gray-700 rounded-md p-4">
+          <h3 class="text-3xl text-center mb-4">Area Calculation</h3>
+          <div id="area-calculation-list" class="space-y-2"></div>
+        </div>
       </div>
     </main>
     <script src="scripts/triangle-calculate.js"></script>

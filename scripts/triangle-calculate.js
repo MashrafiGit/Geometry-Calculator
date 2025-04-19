@@ -26,5 +26,6 @@ function calculateTriangleArea() {
     const area = 0.5 * base * height;
   
     setInnerTextById('triangle-area', area);
-    addToCalculationList("Triangle", area);
+    
+    addToCalculationList("Triangle", [base, height], area);
 }

@@ -26,5 +26,6 @@ function calculateRectangleArea() {
     const area = length * width;
   
     setInnerTextById('rectangle-area', area);
-    addToCalculationList("Rectangle", area);
+    document.getElementById('rectangle-area').in
+    addToCalculationList("Rectangle", [length, width], area);
 }

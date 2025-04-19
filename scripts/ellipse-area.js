@@ -11,5 +11,5 @@ function calculateEllipseArea(){
     const area = 3.14 * majorRadius * minorRadius;
   
     setInnerTextById('ellipse-area', area);
-    addToCalculationList("Ellipse", area);
+    addToCalculationList("Ellipse", [majorRadius, minorRadius], area);
   }

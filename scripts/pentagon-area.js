@@ -24,5 +24,5 @@ function calculatePentagonArea() {
     const area = 0.5 * perimeter * apothem;
   
     setInnerTextById('pentagon-area', area);
-    addToCalculationList("Pentagon", area);
+    addToCalculationList("Pentagon", [perimeter, apothem], area);
 }
